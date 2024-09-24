@@ -1,0 +1,22 @@
+[
+  { "id": 1, "region": "US", "data": 290, "coordinates": [37.0902, -95.7129] },
+  { "id": 2, "region": "US", "data": 490, "coordinates": [37.0902, -95.7129] },
+  { "id": 3, "region": "AT", "data": 790, "coordinates": [47.5162, 14.5501] },
+  { "id": 4, "region": "SE", "data": 590, "coordinates": [60.1282, 18.6435] },
+  { "id": 5, "region": "AT", "data": 290, "coordinates": [47.5162, 14.5501] },
+  { "id": 6, "region": "SE", "data": 390, "coordinates": [60.1282, 18.6435] },
+  { "id": 7, "region": "CA", "data": 350, "coordinates": [56.1304, -106.3468] },
+  { "id": 8, "region": "FR", "data": 720, "coordinates": [46.6034, 1.8883] },
+  { "id": 9, "region": "DE", "data": 800, "coordinates": [51.1657, 10.4515] },
+  { "id": 10, "region": "GB", "data": 450, "coordinates": [55.3781, -3.436] },
+  { "id": 11, "region": "JP", "data": 600, "coordinates": [36.2048, 138.2529] },
+  { "id": 12, "region": "IN", "data": 920, "coordinates": [20.5937, 78.9629] },
+  { "id": 13, "region": "BR", "data": 500, "coordinates": [-14.235, -51.9253] },
+  {
+    "id": 14,
+    "region": "AU",
+    "data": 710,
+    "coordinates": [-25.2744, 133.7751]
+  },
+  { "id": 15, "region": "CN", "data": 950, "coordinates": [35.8617, 104.1954] }
+]

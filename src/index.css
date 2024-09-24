@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.map-container {
+  width: 1000px; /* Default width */
+  /* Default height */
+}
+
+/* For screens smaller than or equal to 1000px */
+@media (max-width: 1000px) {
+  .map-container {
+    width: 800px; /* Adjust width to 400px */
+  }
+}
+@media (max-width: 800px) {
+  .map-container {
+    width: 500px; /* Adjust width to 400px */
+    font-size: 15px;
+  }
+}
+/* For screens smaller than or equal to 500px */
+@media (max-width: 500px) {
+  .map-container {
+    width: 300px; /* Adjust width to 300px */
+    font-size: 15px;
+  }
+}
