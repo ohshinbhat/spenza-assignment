@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, CircleMarker, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import geodata from "../utils/geodata.json"; // Import network data
-import Legend from "./Legend"; // Import the legend component
+import geodata from "../utils/geodata.json";
+import Legend from "./Legend";
 
-// Function to get color based on data value
 const getColor = (value) => {
   const minValue = Math.min(...geodata.map((d) => d.data));
   const maxValue = Math.max(...geodata.map((d) => d.data));
@@ -14,19 +13,17 @@ const getColor = (value) => {
   )}, 255)`;
 };
 
-// Function to calculate radius based on data
 const getRadius = (value) => {
   const minValue = Math.min(...geodata.map((d) => d.data));
   const maxValue = Math.max(...geodata.map((d) => d.data));
   const percentage = (value - minValue) / (maxValue - minValue);
-  return 10 + percentage * 30; // Adjust the radius scaling as needed
+  return 10 + percentage * 30;
 };
 
 const MapComponent = () => {
-  // Define geographic bounds (south-west and north-east corners)
   const bounds = [
-    [-85, -180], // South-West corner
-    [85, 180], // North-East corner
+    [-85, -180],
+    [85, 180],
   ];
   const [mapSize, setMapSize] = useState({ width: 1000, height: 500 });
 
@@ -37,10 +34,10 @@ const MapComponent = () => {
         zoom={2}
         className="map-container"
         style={{ height: "500px" }}
-        maxBounds={bounds} // Set the max bounds
-        maxBoundsViscosity={1.0} // Make the map adhere strictly to the bounds
-        minZoom={2} // Set minimum zoom level
-        maxZoom={8} // Set maximum zoom level
+        maxBounds={bounds}
+        maxBoundsViscosity={1.0}
+        minZoom={2}
+        maxZoom={8}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

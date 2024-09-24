@@ -10,10 +10,10 @@ const Legend = () => {
     borderRadius: "5px",
     boxShadow: "0 0 15px rgba(0,0,0,0.2)",
     zIndex: 1000,
-    display: "flex", // Make the legend container a flexbox
-    flexDirection: "row", // Align items in a row
-    flexWrap: "wrap", // Allow wrapping to the next line if needed
-    gap: "10px", // Space between items
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: "10px",
   };
 
   const legendItemStyle = {
@@ -32,7 +32,7 @@ const Legend = () => {
   };
   const minValue = Math.min(...geodata.map((d) => d.data));
   const maxValue = Math.max(...geodata.map((d) => d.data));
-  const rangeStep = (maxValue - minValue) / 4; // Create 4 ranges
+  const rangeStep = (maxValue - minValue) / 4;
 
   const ranges = [
     { label: `< ${Math.round(minValue + rangeStep)}`, value: minValue },
